@@ -18,21 +18,33 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="~/assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="~/assets/img/favicon.png">
     <title>
         Argon Dashboard 2 by Creative Tim
     </title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery (Bootstrap membutuhkan jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Nucleo Icons -->
-    <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="~/assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="~/assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="~/assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
-    <link id="pagestyle" href="./assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
+    <link id="pagestyle" href="~/assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+
 </head>
 
 <body class="g-sidenav-show   bg-gray-100">
@@ -147,12 +159,71 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+      var colors = ['#FF4560', '#008FFB', '#00E396'];
+
+      var options = {
+        series: [{
+          data: [@ViewBag.produkCount, @ViewBag.supplierCount, @ViewBag.kategoriCount]
+        }],
+        chart: {
+          height: 350,
+          type: 'bar',
+          events: {
+            click: function (chart, w, e) {
+              // console.log(chart, w, e)
+            }
+          }
+        },
+        colors: colors,
+        plotOptions: {
+          bar: {
+            columnWidth: '45%',
+            distributed: true,
+          }
+        },
+        dataLabels: {
+          enabled: true
+        },
+        legend: {
+          show: false
+        },
+        xaxis: {
+          categories: [
+            ['Jumlah', 'Produk'],
+            ['Jumlah', 'Supplier'],
+            ['Jumlah', 'Kategori'],
+          ],
+          labels: {
+            style: {
+              colors: colors,
+              fontSize: '12px'
+            }
+          }
+        }
+      };
+
+      var chart = new ApexCharts(document.querySelector("#JJJh"), options);
+      chart.render();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+
     <!--   Core JS Files   -->
-    <script src="./assets/js/core/popper.min.js"></script>
-    <script src="./assets/js/core/bootstrap.min.js"></script>
-    <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
-    <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
-    <script src="./assets/js/plugins/chartjs.min.js"></script>
+    <script src="~/assets/js/core/popper.min.js"></script>
+    <script src="~/assets/js/core/bootstrap.min.js"></script>
+    <script src="~/assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="~/assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="~/assets/js/plugins/chartjs.min.js"></script>
     <script>
         var ctx1 = document.getElementById("chart-line").getContext("2d");
 
@@ -248,7 +319,7 @@
     <!-- Github buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src="./assets/js/argon-dashboard.min.js?v=2.0.4"></script>
+    <script src="~/assets/js/argon-dashboard.min.js?v=2.0.4"></script>
 </body>
 
 </html>

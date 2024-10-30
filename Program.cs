@@ -5,6 +5,7 @@ using ProjectCatalog.Models;
 using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
     new MySqlServerVersion(new Version(8, 0, 21))));
@@ -34,13 +35,14 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
+    name: "dashboard",
     pattern: "dashboard",
-    defaults: new {Controller = "Backend", Action = "Index"}
+    defaults: new { Controller = "Backend", Action = "Index" }
 );
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
 app.Run();

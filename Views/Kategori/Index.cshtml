@@ -5,40 +5,48 @@
     Layout = "~/Views/Template/Backend.cshtml";
 }
 
-<h1 style="color: black;">Supplier</h1>
+<h1 style="color: black;">Kategori</h1>
 
 <p>
     <a asp-action="Create" class="btn btn-dark" style="color: white;">Create New +</a>
 </p>
 
-<div class="row">
-    @foreach (var item in Model)
-    {
-        <div class="col-md-20">
-            <div class="card mb-20 shadow-sm">
-                <div class="card-body">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Nama</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="color: #000000">@Html.DisplayFor(modelItem => item.Name)</td>
-                            </tr>
-                            <!-- Tambahkan field lain yang relevan jika diperlukan -->
-                        </tbody>
-                    </table>
-                    <div class="d-flex justify-content-end align-items-center">
-                        <div class="btn-group">
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success">Edit</a>
-                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning">Details</a>
-                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    }
+<div class="card shadow-sm">
+    <div class="card-body">
+        <table class="table table-bordered" id="myTable">
+            <thead>
+                <tr class="text-center">
+                    <th>#</th>
+                    <th>Nama</th> 
+                    <th class="text-center">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int nomor = 1;
+                }
+                @foreach (var item in Model)
+                {
+                    <tr class="text-center">
+                        <td style="color: black;">@nomor</td>
+                        <td style="color: black">@item.Name</td>
+                        <td class="text-center">
+                            <div class="btn-group">
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-success mx-1" title="Edit">
+                                    <i class="fa fa-pencil-alt"></i>
+                                </a>
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-warning mx-1" title="Details">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger mx-1" title="Delete">
+                                    <i class="fa fa-trash-alt"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    nomor++;
+                }
+            </tbody>
+        </table>
+    </div>
 </div>

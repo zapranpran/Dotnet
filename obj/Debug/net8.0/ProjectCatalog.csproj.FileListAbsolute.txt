@@ -277,3 +277,4 @@ C:\Users\ADVAN\Documents\ProjectCatalog\obj\Debug\net8.0\refint\ProjectCatalog.d
 C:\Users\ADVAN\Documents\ProjectCatalog\obj\Debug\net8.0\ProjectCatalog.pdb
 C:\Users\ADVAN\Documents\ProjectCatalog\obj\Debug\net8.0\ProjectCatalog.genruntimeconfig.cache
 C:\Users\ADVAN\Documents\ProjectCatalog\obj\Debug\net8.0\ref\ProjectCatalog.dll
+C:\Users\ADVAN\Documents\ProjectCatalog\obj\Debug\net8.0\ProjectCatalog.sourcelink.json

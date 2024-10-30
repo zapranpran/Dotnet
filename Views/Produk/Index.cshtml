@@ -11,43 +11,59 @@
     <a asp-action="Create" class="btn btn-dark" style="color: white;">Create New +</a>
 </p>
 
-<div class="row">
-    @foreach (var item in Model)
-    {
-        <div class="col-md-20">
-            <div class="card mb-20 shadow-sm">
-                <div class="card-body">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr class="text-center">
-                                <th>Nama Produk</th>
-                                <th>Harga</th>
-                                <th>Deskripsi</th>
-                                <th>Kategori</th>
-                                <th>Supplier</th>
-                                <th>Foto</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="text-center">
-                                <td style="color: black;">@Html.DisplayFor(modelItem => item.NamaProduk)</td>
-                                <td style="color: #000000">@Html.DisplayFor(modelItem => item.Harga)</td>
-                                <td style="color: #000000">@Html.DisplayFor(modelItem => item.Deskripsi)</td>
-                                <td style="color: #000000">@Html.DisplayFor(modelItem => item.Kategori.Id)</td>
-                                <td style="color: #000000">@Html.DisplayFor(modelItem => item.Supplier.Id)</td>
-                                <td><img src="~/image/produk/@item.ImageProduk" width="100"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="d-flex justify-content-end align-items-center">
-                        <div class="btn-group">
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success">Edit</a>
-                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning">Details</a>
-                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    }
+<div class="card shadow-sm">
+    <div class="card-body">
+        <table class="table table-bordered" id="myTable">
+            <thead>
+                <tr class="text-center">
+                    <th>#</th>
+                    <th>Nama Produk</th>
+                    <th>Harga</th>
+                    <th>Deskripsi</th>
+                    <th>Kategori</th>
+                    <th>Supplier</th>
+                    <th>Foto</th>
+                    <th class="text-center">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int nomor = 1;
+                }
+                @foreach (var item in Model)
+                {
+                    <tr class="text-center">
+                        <td style="color: black;">@nomor</td>
+                        <td style="color: black;">@item.NamaProduk</td>
+                        <td style="color: black;">@item.Harga.ToString("N2")</td>
+                        <td style="color: black;">@item.Deskripsi</td>
+                        <td style="color: black;">@item.Kategori.Name</td>
+                        <td style="color: black;">@item.Supplier.Nama</td>
+                        <td><img src="~/image/produk/@item.ImageProduk" width="100"></td>
+                        <td class="text-center">
+                            <div class="dropdown">
+                                <button class="btn btn-outline-primary dropdown-toggle" type="button"
+                                    id="dropdownMenuButton_@item.Id" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Opsi
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton_@item.Id">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="dropdown-item" title="Edit">
+                                        <i class="fa fa-pencil-alt"></i> Edit
+                                    </a>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="dropdown-item" title="Details">
+                                        <i class="fa fa-eye"></i> Details
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="dropdown-item" title="Delete">
+                                        <i class="fa fa-trash-alt"></i> Delete
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    nomor++;
+                }
+            </tbody>
+        </table>
+    </div>
 </div>

@@ -56,8 +56,8 @@ namespace ProjectCatalog.Controllers
         // GET: Produk/Create
         public IActionResult Create()
         {
-            ViewData["KategoriId"] = new SelectList(_context.Kategori, "Id", "Id");
-            ViewData["SupplierId"] = new SelectList(_context.Supplier, "Id", "Id");
+            ViewData["KategoriId"] = new SelectList(_context.Kategori, "Id", "Name");
+            ViewData["SupplierId"] = new SelectList(_context.Supplier, "Id", "Nama");
             return View();
         }
 
@@ -93,8 +93,8 @@ namespace ProjectCatalog.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["KategoriId"] = new SelectList(_context.Kategori, "Id", "Id", produk.KategoriId);
-            ViewData["SupplierId"] = new SelectList(_context.Supplier, "Id", "Id", produk.SupplierId);
+            ViewData["KategoriId"] = new SelectList(_context.Kategori, "Id", "Name", produk.KategoriId);
+            ViewData["SupplierId"] = new SelectList(_context.Supplier, "Id", "Nama", produk.SupplierId);
             return View(produk);
         }
 
@@ -111,8 +111,8 @@ namespace ProjectCatalog.Controllers
             {
                 return NotFound();
             }
-            ViewData["KategoriId"] = new SelectList(_context.Kategori, "Id", "Id", produk.KategoriId);
-            ViewData["SupplierId"] = new SelectList(_context.Supplier, "Id", "Id", produk.SupplierId);
+            ViewData["KategoriId"] = new SelectList(_context.Kategori, "Id", "Name", produk.KategoriId);
+            ViewData["SupplierId"] = new SelectList(_context.Supplier, "Id", "Nama", produk.SupplierId);
             return View(produk);
         }
 
@@ -184,8 +184,8 @@ namespace ProjectCatalog.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["KategoriId"] = new SelectList(_context.Kategori, "Id", "Id", produk.KategoriId);
-            ViewData["SupplierId"] = new SelectList(_context.Supplier, "Id", "Id", produk.SupplierId);
+            ViewData["KategoriId"] = new SelectList(_context.Kategori, "Id", "Name", produk.KategoriId);
+            ViewData["SupplierId"] = new SelectList(_context.Supplier, "Id", "Nama", produk.SupplierId);
             return View(produk);
         }
 

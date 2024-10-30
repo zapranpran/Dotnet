@@ -77,6 +77,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\bruce-mars.jpg"
     },
     {
+      "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\assets\\img\\cargo.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\cargo.jpeg"
+    },
+    {
       "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\assets\\img\\carousel-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\carousel-1.jpg"
     },
@@ -217,6 +221,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\home-decor-3.jpg"
     },
     {
+      "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\assets\\img\\hoodie.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hoodie.jpg"
+    },
+    {
       "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\assets\\img\\icons\\flags\\AU.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\flags\\AU.png"
     },
@@ -253,8 +261,16 @@
       "PackagePath": "staticwebassets\\assets\\img\\ivancik.jpg"
     },
     {
+      "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\assets\\img\\jaket.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\jaket.jpg"
+    },
+    {
       "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\assets\\img\\kal-visuals-square.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\kal-visuals-square.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\assets\\img\\kantong.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\kantong.jpg"
     },
     {
       "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\assets\\img\\logo-ct-dark.png",
@@ -275,6 +291,14 @@
     {
       "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\assets\\img\\marie.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\marie.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\assets\\img\\nike.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\nike.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\assets\\img\\sepokat.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sepokat.jpg"
     },
     {
       "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\assets\\img\\shapes\\pattern-lines.svg",
@@ -1145,8 +1169,20 @@
       "PackagePath": "staticwebassets\\image\\produk\\3089_Perikanan dan Peternakan.png"
     },
     {
+      "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\image\\produk\\3270_cargo.jpeg",
+      "PackagePath": "staticwebassets\\image\\produk\\3270_cargo.jpeg"
+    },
+    {
       "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\image\\produk\\3293_malin kundang.jpg",
       "PackagePath": "staticwebassets\\image\\produk\\3293_malin kundang.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\image\\produk\\4532_kantong.jpg",
+      "PackagePath": "staticwebassets\\image\\produk\\4532_kantong.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\image\\produk\\5318_jaket.jpg",
+      "PackagePath": "staticwebassets\\image\\produk\\5318_jaket.jpg"
     },
     {
       "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\image\\produk\\5448_malin kundang.jpg",
@@ -1163,6 +1199,22 @@
     {
       "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\image\\produk\\7764_persija2.jpg",
       "PackagePath": "staticwebassets\\image\\produk\\7764_persija2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\image\\produk\\7981_hoodie.jpg",
+      "PackagePath": "staticwebassets\\image\\produk\\7981_hoodie.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\image\\produk\\8150_nike.jpg",
+      "PackagePath": "staticwebassets\\image\\produk\\8150_nike.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\image\\produk\\9267_nike.jpg",
+      "PackagePath": "staticwebassets\\image\\produk\\9267_nike.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\image\\produk\\9975_sepokat.jpg",
+      "PackagePath": "staticwebassets\\image\\produk\\9975_sepokat.jpg"
     },
     {
       "Id": "C:\\Users\\ADVAN\\Documents\\ProjectCatalog\\wwwroot\\js\\site.js",
