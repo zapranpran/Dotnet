@@ -39,6 +39,11 @@ app.MapControllerRoute(
     pattern: "dashboard",
     defaults: new { Controller = "Backend", Action = "Index" }
 );
+app.MapControllerRoute(
+    name: "guest",
+    pattern: "guest",
+    defaults: new { controller = "Frontend", action = "Index" }
+);
 
 app.MapControllerRoute(
     name: "default",

@@ -190,6 +190,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ADVAN/Documents/ProjectCatalog/Views/Frontend/Guest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJvbnRlbmRcR3Vlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADVAN/Documents/ProjectCatalog/Views/Guest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ADVAN/Documents/ProjectCatalog/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -284,6 +292,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ADVAN/Documents/ProjectCatalog/Views/Template/Backend/Sidebar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcGxhdGVcQmFja2VuZFxTaWRlYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADVAN/Documents/ProjectCatalog/Views/Template/Frontend.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcGxhdGVcRnJvbnRlbmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADVAN/Documents/ProjectCatalog/Views/Template/Frontend/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcGxhdGVcRnJvbnRlbmRcRm9vdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADVAN/Documents/ProjectCatalog/Views/Template/Frontend/Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcGxhdGVcRnJvbnRlbmRcSGVhZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ADVAN/Documents/ProjectCatalog/Views/_ViewImports.cshtml]
